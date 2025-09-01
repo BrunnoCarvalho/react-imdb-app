@@ -1,9 +1,11 @@
+const token = "TOKEN_AQUI"
+
 import { useParams, useNavigate } from "react-router-dom"
 import { useState, useEffect } from "react"
 import axios from "axios"
 import styles from './MovieDetails.module.css'
 import notFound from '../assets/notFound.jpg'
-const token = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlYzE3ODA0ODc1ZmY3M2RkMjIwMWJiMGExOTdkNWQzYyIsIm5iZiI6MTczNTQ4MTc1OS4yNTEwMDAyLCJzdWIiOiI2NzcxNTk5ZjVmMWM0ZmE0NzM2MTU5YzkiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.DaikfTeyRlAu3wL4fK1LdQcw-fyIzH3COdsqaLf8zRM'
+
 
 const MovieDetails = () => {
     const { id } = useParams()
